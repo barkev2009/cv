@@ -1,9 +1,10 @@
 import React from 'react';
+import './styles/style.css'
 
 function App() {
   return (
-    <div>
-      My CV
+    <div className='container'>
+      <img className='img_main' src={process.env.PUBLIC_URL + '/cv_photo.png'} alt='my face' />
     </div>
   );
 }
