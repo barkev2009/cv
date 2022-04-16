@@ -1,0 +1,1 @@
+export const SWITCH_LANGUAGE : string = 'APP/SWITCH_LANGUAGE';

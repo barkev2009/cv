@@ -1,14 +1,9 @@
-interface dictObject {
-    eng: Object,
-    rus: Object
-}
-
-const dictionary : dictObject = {
+const dictionary : any = {
     eng: {
-        
+        PHOTO_LABEL: 'This is my photo'
     },
     rus: {
-
+        PHOTO_LABEL: 'Это мое фото'
     }
 }
 
