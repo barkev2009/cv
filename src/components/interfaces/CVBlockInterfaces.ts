@@ -9,7 +9,6 @@ export interface contentNamedItem {
 
 export interface CVBlockProps {
     blockName: string,
-    namedPoints: boolean,
-    content?: contentItem[],
-    namedContent? : contentNamedItem[]
+    blockID: string,
+    content?: contentItem[] | contentNamedItem[]
 }

@@ -1,11 +1,134 @@
+::-webkit-scrollbar {
+    display: none;
+  }
+  
+* {
+margin: auto;
+font-family: 'Oswald', sans-serif;
+font-size: 1.5vw;
+}
+
 .container {
-    padding: 1vw 2vw 1vw 2vw;
+    margin: auto;
+    padding: 0 2vw;
+}
+
+.main_container {
+    padding: 2vw 5vw;
+    margin: 0 5vw;
 }
 
 .img_main {
     width: 20vw;
+    display: inline-block;
+}
+
+.main_info {
+    display: inline-block;
+}
+
+.cv-blocks {
+    background-color: bisque;
 }
 
 .block-item {
+    padding: 1vw;
+    cursor: pointer;
+    width: 25vw;
+    height: 3vw;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.switcher-container {
     display: inline-block;
+}
+
+.switcher {
+    cursor: pointer;
+    transition: all 0.5s;
+    width: 3vw;
+    height: 1vw;
+    border-radius: 1vw;
+    position: relative;
+    display: table-cell;
+    border: 0.15vw solid rgb(133, 133, 133);
+}
+
+.switcher-ball {
+    background-color: rgb(207, 207, 207);
+    height: 1.2vw;
+    width: 1.2vw;
+    border-radius: 1vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.5s;
+}
+
+.switch-ball-right {
+    transform: translateX(1.8vw);
+}
+
+.switch-ball-left {
+    transform: translateX(0);
+}
+
+.switch-rus {
+    background-color: blue;
+    color: aliceblue;
+}
+
+.switch-eng {
+    background-color: rgb(160, 160, 255);
+    color: black;
+}
+
+.switch-label {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 1vw;
+    font-size: 1vw;
+}
+
+.whatsapp_float {
+    display: inline-block;
+}
+
+.whatsapp-icon {
+    width: 3vw;
+}
+
+.back-rect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 20vw;
+    background-color: rgb(89, 214, 255);
+    box-shadow: 0 0 20px gray;
+    z-index: -10;
+}
+
+.back-header {
+    width: 100vw;
+    height: 5vw;
+    padding-left: 80vw;
+}
+
+.main_card {
+    width: 80vw;
+    border: 3px dotted black;
+    margin: auto;
+    margin-top: 5vw;
+    background-color: white;
+    box-shadow: 0 0 0px gray;
+}
+
+@media screen and (max-width: 500px) {
+    .img_main {
+        width: 60vw;
+    }
+
 }

@@ -1,6 +1,8 @@
 import React, { FC } from 'react'
-import EducationBlock from './EducationBlock'
-import MainBlock from './MainBlock'
+import { EDUCATION, PROGRAMMING_LANGUAGES } from '../blockIDs'
+import EducationBlock from './CVBlocks/EducationBlock'
+import MainBlock from './CVBlocks/MainBlock'
+import ProgLangBlock from './CVBlocks/ProgLangBlock'
 
 interface SwitchContainerProps {
     curBlock: string
@@ -8,9 +10,10 @@ interface SwitchContainerProps {
 
 const SwitchContainer: FC<SwitchContainerProps> = ({ curBlock }) => {
     switch (curBlock) {
-        case 'Education':
-        case 'Образование':
+        case EDUCATION:
             return <EducationBlock />
+        case PROGRAMMING_LANGUAGES:
+            return <ProgLangBlock />
         default:
             return <MainBlock />
     }

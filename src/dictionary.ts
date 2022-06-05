@@ -1,11 +1,14 @@
-const dictionary : any = {
+import { EDUCATION, MAIN, PROGRAMMING_LANGUAGES } from './blockIDs';
+
+
+const dictionary: any = {
     eng: {
         PHOTO_LABEL: 'This is my photo',
         LANG_LABEL: 'English',
-        CVBlocks: [
+        CV_BLOCKS: [
             {
+                blockID: MAIN,
                 blockName: 'Main',
-                namedPoints: false,
                 content: [
                     {
                         name: 'Finished school'
@@ -16,9 +19,9 @@ const dictionary : any = {
                 ]
             },
             {
+                blockID: EDUCATION,
                 blockName: 'Education',
-                namedPoints: true,
-                namedContent: [
+                content: [
                     {
                         key: 'First',
                         value: 'School'
@@ -32,16 +35,28 @@ const dictionary : any = {
                         value: 'Master'
                     }
                 ]
+            },
+            {
+                blockID: PROGRAMMING_LANGUAGES,
+                blockName: 'Programming languages',
+                content: [
+                    {
+                        name: 'Python'
+                    },
+                    {
+                        name: 'JavaScript'
+                    }
+                ]
             }
         ]
     },
     rus: {
         PHOTO_LABEL: 'Это мое фото',
         LANG_LABEL: 'Русский',
-        CVBlocks: [
+        CV_BLOCKS: [
             {
+                blockID: MAIN,
                 blockName: 'Основное',
-                namedPoints: false,
                 content: [
                     {
                         name: 'Закончил школу'
@@ -52,9 +67,9 @@ const dictionary : any = {
                 ]
             },
             {
+                blockID: EDUCATION,
                 blockName: 'Образование',
-                namedPoints: true,
-                namedContent: [
+                content: [
                     {
                         key: 'Первое',
                         value: 'Школа'
@@ -66,6 +81,18 @@ const dictionary : any = {
                     {
                         key: 'Третье',
                         value: 'Магистр'
+                    }
+                ]
+            },
+            {
+                blockID: PROGRAMMING_LANGUAGES,
+                blockName: 'Языки программирования',
+                content: [
+                    {
+                        name: 'Python'
+                    },
+                    {
+                        name: 'JavaScript'
                     }
                 ]
             }
