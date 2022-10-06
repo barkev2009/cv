@@ -137,3 +137,20 @@ font-size: 1.5vw;
     background: linear-gradient(130deg, black, rgb(21, 21, 21));
     height: 100vh;
 }
+
+.letters {
+    color: white;
+}
+
+.letter {
+    display: inline-block;
+    font-size: 106px;
+    letter-spacing: 2px;
+    transition: all 0.2s;
+}
+
+.letter:hover {
+    transform: scale(1.2) rotate(5deg);
+    color: aqua;
+}
+
