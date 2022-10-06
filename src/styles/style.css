@@ -132,3 +132,8 @@ font-size: 1.5vw;
     }
 
 }
+
+.landing_main {
+    background: linear-gradient(130deg, black, rgb(21, 21, 21));
+    height: 100vh;
+}

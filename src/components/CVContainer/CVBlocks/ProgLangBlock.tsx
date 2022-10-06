@@ -1,8 +1,8 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-import { RootState } from '../..'
-import { PROGRAMMING_LANGUAGES } from '../../blockIDs'
-import { getBlockContent } from '../../utils'
+import { RootState } from '../../..'
+import { PROGRAMMING_LANGUAGES } from '../../../blockIDs'
+import { getBlockContent } from '../../../utils'
 
 const ProgLangBlock = () => {
 

@@ -1,7 +1,8 @@
 import React, { FC } from 'react'
-import { useSelector } from 'react-redux'
-import { RootState } from '..'
-import dictionary from '../dictionary'
+import { useDispatch, useSelector } from 'react-redux'
+import { RootState } from '../../..'
+import dictionary from '../../../dictionary'
+import { switchCurrentPage } from '../../../redux/actions/appActions'
 import Header from './Header'
 import LanguageSwitch from './LanguageSwitch'
 
@@ -12,11 +13,14 @@ interface FaceContainerProps {
 const FaceContainer: FC<FaceContainerProps> = ({ setCurrentBlock }) => {
 
     const language: string = useSelector<RootState>(state => state.app.languageRus) ? 'rus' : 'eng'
+    const dispatch = useDispatch();
+    
 
     return (
         <div>
             <div className="back-rect" />
             <div className="back-header">
+                <button onClick={() => dispatch(switchCurrentPage('landing'))}>Test</button>
                 <a href="https://wa.me/89618476363" className="whatsapp_float" target="_blank" rel="noopener noreferrer">
                     <img className='whatsapp-icon' src={process.env.PUBLIC_URL + '/whatsapp-icon.svg'} alt='whatsapp' />
                 </a>

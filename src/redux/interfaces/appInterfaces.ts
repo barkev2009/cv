@@ -1,5 +1,6 @@
 export interface appState {
-    languageRus: boolean
+    languageRus: boolean,
+    currentPage: string
 }
 
 export interface appAction {

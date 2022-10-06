@@ -1,9 +1,8 @@
 import React from 'react'
-import { RootState } from '../'
+import { RootState } from '../../..'
 import { useSelector, useDispatch } from 'react-redux'
-import { switchLang } from '../redux/actions/appActions'
-import '../styles/style.css'
-import dictionary from '../dictionary'
+import { switchLang } from '../../../redux/actions/appActions'
+import dictionary from '../../../dictionary'
 
 const LanguageSwitch = () => {
 

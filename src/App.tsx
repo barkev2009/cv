@@ -1,19 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './styles/style.css'
-import SwitchContainer from './components/SwitchContainer';
-import FaceContainer from './components/FaceContainer';
+import MainSwitchContainer from './components/MainSwitchContainer';
+import { useSelector } from 'react-redux';
+import { RootState } from '.';
 
 function App() {
 
-  const [currentBlock, setCurrentBlock] = useState<string>('')
+  const currentPage : any = useSelector<RootState>(state => state.app.currentPage);
 
   return (
-    <div className='container'>
-      <FaceContainer setCurrentBlock={setCurrentBlock} />
-      <div className="main_container">
-        <SwitchContainer curBlock={currentBlock} />
-      </div>
-    </div>
+    <MainSwitchContainer curPage={currentPage} />
   );
 }
 

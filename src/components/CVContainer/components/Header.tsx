@@ -1,8 +1,8 @@
 import React, { FC } from 'react'
 import { useSelector } from 'react-redux'
-import { RootState } from '..'
-import dictionary from '../dictionary'
-import { CVBlockProps } from './interfaces/CVBlockInterfaces'
+import { RootState } from '../../..'
+import dictionary from '../../../dictionary'
+import { CVBlockProps } from '../../interfaces/CVBlockInterfaces'
 
 interface HeaderProps {
     setCurrentBlock: any

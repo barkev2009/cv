@@ -1,8 +1,8 @@
 import React, { FC } from 'react'
-import { EDUCATION, PROGRAMMING_LANGUAGES } from '../blockIDs'
-import EducationBlock from './CVBlocks/EducationBlock'
-import MainBlock from './CVBlocks/MainBlock'
-import ProgLangBlock from './CVBlocks/ProgLangBlock'
+import { EDUCATION, PROGRAMMING_LANGUAGES } from '../../../blockIDs'
+import EducationBlock from '../CVBlocks/EducationBlock'
+import MainBlock from '../CVBlocks/MainBlock'
+import ProgLangBlock from '../CVBlocks/ProgLangBlock'
 
 interface SwitchContainerProps {
     curBlock: string
