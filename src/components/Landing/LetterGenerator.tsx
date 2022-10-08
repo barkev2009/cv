@@ -1,19 +1,19 @@
 import React, { FC } from 'react'
+import GeneratedLetter from './GeneratedLetter'
 
 interface LetterGeneratorProps {
-    text: string
+  text: string
 }
 
-const LetterGenerator : FC<LetterGeneratorProps> = ({text}) => {
+const LetterGenerator: FC<LetterGeneratorProps> = ({ text }) => {
+
   return (
     <div className='letters'>
-        {
-            text.split('').map(
-                item => item !== ' ' ?
-                    <div className='letter'>{item}</div> :
-                    <div className='letter' style={{'width': '30px'}} />
-            )
-        }
+      {
+        text.split('').map(
+          (item, idx) => <GeneratedLetter letter={item} key={idx}/>
+        )
+      }
     </div>
   )
 }

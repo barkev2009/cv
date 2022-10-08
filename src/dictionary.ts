@@ -5,6 +5,8 @@ const dictionary: any = {
     eng: {
         PHOTO_LABEL: 'This is my photo',
         LANG_LABEL: 'English',
+        FIRST_LINE: 'Test something here,',
+        SECOND_LINE: 'and here as well',
         CV_BLOCKS: [
             {
                 blockID: MAIN,
@@ -53,6 +55,8 @@ const dictionary: any = {
     rus: {
         PHOTO_LABEL: 'Это мое фото',
         LANG_LABEL: 'Русский',
+        FIRST_LINE: 'Тест чего-то здесь,',
+        SECOND_LINE: 'и здесь тоже',
         CV_BLOCKS: [
             {
                 blockID: MAIN,
